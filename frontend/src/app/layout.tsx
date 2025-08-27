@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
+import { Cinzel, Montserrat_Alternates } from "next/font/google";
+
+const cinzel = Cinzel({
+  weight: ["700"],
+  subsets: ["latin"],
+  variable: "--font-cinzel",
+});
+
+const montserratAlt = Montserrat_Alternates({
+  weight: ["700"],
+  subsets: ["latin"],
+  variable: "--font-montserrat-alt",
+});
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

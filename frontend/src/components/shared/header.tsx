@@ -3,19 +3,21 @@ import React from "react";
 
 const HeaderComponent = () => {
   return (
-    <div className="shadow-xl/30 lg:h-[14vh] bg-navBgColor ">
-      <section className="py-3 h-full border-b border-appBorderColor">
+    <div className="shadow-xl/30  bg-navBgColor ">
+      <section className=" h-full border-b border-appBorderColor">
         <div className="mx-smallScreenMargin xl:mx-auto xl:w-containerWidth flex">
           <div className="flex justify-between items-center w-full">
             {/* <Image
-                               src="/logo.webp" // 👈 replace with your logo file in public/
+                               src="/logo.webp" 
                                alt="Company Logo"
                                width={40}
                                height={40}
                                className="mr-2 rounded-full object-cover"
                              /> */}
-            <h6 className="font-bold text-xl">THAI VISION</h6>
-            <div className="lg:hidden block">
+{/*             <h6 className="brand-title text-blue-900">& THAI VISION</h6>
+ */}            
+              <h6 className="brand-title">THAI VISION</h6>
+              <div className="lg:hidden block">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}

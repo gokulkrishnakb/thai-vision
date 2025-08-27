@@ -51,3 +51,36 @@ p {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.brand-title {
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+/* Icon styling */
+.brand-icon {
+  color: #1e3a8a; /* Dark blue */
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 50, 0.25));
+}
+
+/* THAI in Cinzel (luxury serif) */
+.brand-title .thai {
+  font-family: var(--font-cinzel), serif;
+  background: linear-gradient(90deg, #0f172a, #1e3a8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 6px rgba(0, 0, 50, 0.2);
+}
+
+/* VISION in Montserrat Alternates (modern sans-serif) */
+.brand-title .vision {
+  font-family: var(--font-montserrat-alt), sans-serif;
+  color: #1e3a8a;
+  text-shadow: 1px 1px 4px rgba(30, 58, 138, 0.35);
+}
+
