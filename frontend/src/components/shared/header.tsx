@@ -3,11 +3,12 @@ import React from "react";
 
 const HeaderComponent = () => {
   return (
-    <>
-      <section className="border-b py-3 border-appBorderColor">
+    <div className="shadow-xl/30 h-[18vh] ">
+      <section className="py-3 border-b border-appBorderColor">
         <div className="mx-smallScreenMargin xl:mx-auto xl:w-containerWidth">
           <div className="flex justify-between items-center">
-            <Image src={"/logo.png"} alt="logo" width={100} height={100} />
+            {/* <Image src={"/logo.png"} alt="logo" width={100} height={100} /> */}
+            <h6 className="font-bold text-xl">TAI VISION</h6>
             <div className="lg:hidden block">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +30,7 @@ const HeaderComponent = () => {
           </div>
         </div>
       </section>
-      {/* <nav className="py-7 shadow-xl/30 bg-navBgColor hidden lg:block">
+      <nav className="py-7 bg-navBgColor hidden lg:block">
         <div className="xl:w-containerWidth flex gap-3 mx-smallScreenMargin xl:mx-auto">
           <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
             <p>Thailand Tours</p>
@@ -38,8 +39,8 @@ const HeaderComponent = () => {
             <p>Things to do</p>
           </div>
         </div>
-      </nav> */}
-    </>
+      </nav>
+    </div>
   );
 };
 

@@ -28,7 +28,7 @@ const CardComponent = ({ price, time_perod, title, extend }: Props) => {
       <div className="px-5 py-2 flex flex-col gap-3">
         <div className="flex flex-col gap-2 w-full">
           <h6 className="text-center text-xl font-bold flex-wrap">{title}</h6>
-          <p className="text-center text-appTextGray">
+          <p className="text-center text-appTextGray text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil
             aliquid, exercitationem
           </p>

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Slider from "react-slick";
 import Image from "next/image";
+import Slider from "react-slick";
 
 const partners = [
   { id: 1, logo: "/dusit.png", name: "Dusit" },
@@ -11,7 +11,6 @@ const partners = [
   { id: 6, logo: "/nokair.png", name: "Partner 5" },
   { id: 7, logo: "/avani.webp", name: "Partner 6" },
   { id: 8, logo: "/sixsenses.jpg", name: "Partner 6" },
-
 ];
 
 const PartnerCarousel = () => {
@@ -32,10 +31,8 @@ const PartnerCarousel = () => {
   };
 
   return (
-    <div className="py-10 shadow">
-      <h2 className="text-center font-semibold text-3xl m-8">
-        Our Partners
-      </h2>
+    <div className="py-10 shadow w-containerWidth mx-auto overflow-hidden">
+      <h2 className="text-center font-semibold text-3xl m-8">Our Partners</h2>
       <div className="max-w-4xl mx-auto px-6 mt-4">
         <Slider {...settings}>
           {partners.map((partner) => (

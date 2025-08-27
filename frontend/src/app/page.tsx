@@ -57,14 +57,14 @@ const LandingPage = () => {
     <div className="w-full">
       <HeaderComponent />
       <section>
-        <div className="h-[75vh] relative overflow-hidden bg-[url(/hero-banner.jpg)] bg-no-repeat bg-cover bg-center">
+        <div className="h-[82vh] relative overflow-hidden bg-[url(/hero-banner.jpg)] bg-no-repeat bg-cover bg-center">
           <div className="w-full xl:w-containerWidth mx-smallScreenMargin xl:mx-auto pt-24 flex flex-col text-white">
             <div className="flex gap-3 flex-wrap text-sm">
               <p>We are the leading</p>
               <p>DMC in thailand</p>
             </div>
             <h6 className="text-3xl lg:text-5xl mt-3">Tailor Made</h6>
-            <h6 className="text-3xl lg:text-5xl font-bold">Tahailand Tours</h6>
+            <h6 className="text-3xl lg:text-5xl font-bold">Thailand Tours</h6>
             <div className="flex gap-3 mt-3 ps-2 md:ps-3">
               <div className="px-2 sm:px-4 md:px-8 py-2 md:py-3 bg-white text-black cursor-pointer">
                 <p className="font-semibold text-sm md:text-[1rem]">
@@ -88,7 +88,7 @@ const LandingPage = () => {
           <h6 className="text-center text-appTextGray text-2xl font-semibold">
             FIT Travel Service
           </h6>
-          <p className="text-appTextGray text-[18px] text-center">
+          <p className="text-appTextGray text-sm text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
             numquam, asperiores reiciendis suscipit nobis ipsa, ipsum ab sequi
             officia nam facilis fugit non iure! Deserunt eos magnam eius dolore
@@ -130,7 +130,7 @@ const LandingPage = () => {
               <h6 className="text-2xl font-semibold">
                 Group Travel & Set Departures
               </h6>
-              <p className="text-appTextGray text-[18px]">
+              <p className="text-appTextGray text-sm">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Inventore eius nam quos. Vero inventore, cumque neque corporis
                 magnam eos iusto consectetur praesentium laudantium error
@@ -154,7 +154,7 @@ const LandingPage = () => {
           <h6 className="text-2xl text-appTextGray text-center font-semibold">
             MICE & Corporate Events
           </h6>
-          <p className="text-appTextGray text-[18px] text-center mt-6">
+          <p className="text-appTextGray text-sm text-center mt-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
             distinctio ipsam omnis ratione iste veritatis cumque blanditiis,
             consectetur commodi inventore culpa voluptatum incidunt amet
@@ -196,7 +196,7 @@ const LandingPage = () => {
           <h6 className="text-4xl font-semibold text-center">
             Our Top Selling Thailand Itineraries
           </h6>
-          <p className="text-center text-appTextGray mt-5 text-[18px]">
+          <p className="text-center text-appTextGray mt-5 text-sm">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
             illum eius unde neque eligendi cumque, nihil possimus nisi quis
             quidem deleniti? Quidem labore unde, repudiandae sit odit ipsum.
@@ -236,10 +236,10 @@ const LandingPage = () => {
           </p>
         </div>
       </section>
-      <PartnerCarousel/>
-      <TestimonialCarousel/>
-      <Footer/>
-     </div>
+      <PartnerCarousel />
+      <TestimonialCarousel />
+      <Footer />
+    </div>
   );
 };
 

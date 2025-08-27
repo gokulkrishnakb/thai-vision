@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
-import { FaChevronLeft, FaChevronRight, FaStar } from 'react-icons/fa';
+import { useState, useEffect, useRef } from "react";
+import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 
 type Review = {
   id: number;
@@ -15,54 +15,56 @@ type Review = {
 const reviews: Review[] = [
   {
     id: 1,
-    name: 'John Doe',
-    date: 'Aug 20, 2025',
+    name: "John Doe",
+    date: "Aug 20, 2025",
     rating: 5,
     message:
-      'Great service and Planning! I booked my honeymoon with Thai Vision and it was almost perfect. Thank you Thai Vision!',
-    avatar: '/userAvatar1.avif',
+      "Great service and Planning! I booked my honeymoon with Thai Vision and it was almost perfect. Thank you Thai Vision!",
+    avatar: "/userAvatar1.avif",
   },
   {
     id: 2,
-    name: 'Jane Smith',
-    date: 'Aug 18, 2025',
+    name: "Jane Smith",
+    date: "Aug 18, 2025",
     rating: 4,
     message:
-      'Highly recommend Thai Vision! Prompt service and great planning. They did everything they could, perfectly! Really smooth trip with Thai Vision.',
-    avatar: '/userAvatar2.jpeg',
+      "Highly recommend Thai Vision! Prompt service and great planning. They did everything they could, perfectly! Really smooth trip with Thai Vision.",
+    avatar: "/userAvatar2.jpeg",
   },
   {
     id: 3,
-    name: 'Robert Brown',
-    date: 'Aug 15, 2025',
+    name: "Robert Brown",
+    date: "Aug 15, 2025",
     rating: 5,
     message:
-      'They did everything they could, perfectly! Really smooth trip with Thai Vision. Highly recommend Thai Vision! Prompt service and great planning.',
-    avatar: '/userAvatar3.jpg',
+      "They did everything they could, perfectly! Really smooth trip with Thai Vision. Highly recommend Thai Vision! Prompt service and great planning.",
+    avatar: "/userAvatar3.jpg",
   },
   {
     id: 4,
-    name: 'Alice Green',
-    date: 'Aug 12, 2025',
+    name: "Alice Green",
+    date: "Aug 12, 2025",
     rating: 4,
     message:
       "Don't think too much, they over-delivered and I’ll book again for sure! They did everything they could, perfectly! Really smooth trip with Thai Vision.",
-    avatar: '/userAvatar2.jpeg',
+    avatar: "/userAvatar2.jpeg",
   },
   {
     id: 5,
-    name: 'Michael White',
-    date: 'Aug 10, 2025',
+    name: "Michael White",
+    date: "Aug 10, 2025",
     rating: 5,
     message:
-      'Everything was as smooth as it can realistically be :) They did everything they could, perfectly! Really smooth trip with Thai Vision..',
-    avatar: '/userAvatar5.avif',
+      "Everything was as smooth as it can realistically be :) They did everything they could, perfectly! Really smooth trip with Thai Vision..",
+    avatar: "/userAvatar5.avif",
   },
 ];
 
 export default function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [expandedMap, setExpandedMap] = useState<{ [key: number]: boolean }>({});
+  const [expandedMap, setExpandedMap] = useState<{ [key: number]: boolean }>(
+    {}
+  );
   const [isPaused, setIsPaused] = useState(false);
 
   const total = reviews.length;
@@ -104,20 +106,22 @@ export default function TestimonialCarousel() {
             // compute relative position
             const offset = (idx - currentIndex + total) % total;
 
-            let positionClass = '';
-            let zIndex = 'z-0';
+            let positionClass = "";
+            let zIndex = "z-0";
             if (offset === 0) {
-              positionClass = 'translate-x-0 scale-110 opacity-100';
-              zIndex = 'z-20';
+              positionClass = "translate-x-0 scale-110 opacity-100";
+              zIndex = "z-20";
             } else if (offset === 1) {
-              positionClass = 'translate-x-full -translate-y-4 scale-80 opacity-70';
-              zIndex = 'z-10';
+              positionClass =
+                "translate-x-full -translate-y-4 scale-80 opacity-70";
+              zIndex = "z-10";
             } else if (offset === total - 1) {
-              positionClass = '-translate-x-full -translate-y-4 scale-80 opacity-70';
-              zIndex = 'z-10';
+              positionClass =
+                "-translate-x-full -translate-y-4 scale-80 opacity-70";
+              zIndex = "z-10";
             } else {
-              positionClass = 'opacity-0 scale-75';
-              zIndex = 'z-0';
+              positionClass = "opacity-0 scale-75";
+              zIndex = "z-0";
             }
 
             return (
@@ -133,8 +137,12 @@ export default function TestimonialCarousel() {
                     className="w-12 h-12 rounded-full object-cover mr-3"
                   />
                   <div>
-                    <span className="font-semibold text-gray-900">{review.name}</span>
-                    <span className="block text-gray-500 text-sm">{review.date}</span>
+                    <span className="font-semibold text-gray-900">
+                      {review.name}
+                    </span>
+                    <span className="block text-gray-500 text-sm">
+                      {review.date}
+                    </span>
                   </div>
                 </div>
 
@@ -144,7 +152,7 @@ export default function TestimonialCarousel() {
                     <FaStar
                       key={i}
                       className={`mr-1 ${
-                        i <= review.rating ? 'text-blue-900' : 'text-gray-300'
+                        i <= review.rating ? "text-blue-900" : "text-gray-300"
                       }`}
                     />
                   ))}
@@ -153,7 +161,7 @@ export default function TestimonialCarousel() {
                 {/* Message */}
                 <p
                   className={`text-gray-700 mb-3 ${
-                    !expandedMap[review.id] ? 'line-clamp-4' : ''
+                    !expandedMap[review.id] ? "line-clamp-4" : ""
                   }`}
                 >
                   {review.message}
@@ -165,7 +173,7 @@ export default function TestimonialCarousel() {
                     onClick={() => toggleExpand(review.id)}
                     className="text-blue-500 font-medium text-sm hover:underline"
                   >
-                    {expandedMap[review.id] ? 'Hide' : 'Read more'}
+                    {expandedMap[review.id] ? "Hide" : "Read more"}
                   </button>
                 )}
               </div>
