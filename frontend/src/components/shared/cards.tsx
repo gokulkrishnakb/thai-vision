@@ -7,9 +7,17 @@ type Props = {
   price: string;
   extend: boolean;
   image: string;
+  description: string;
 };
 
-const CardComponent = ({ price, time_perod, title, extend, image }: Props) => {
+const CardComponent = ({
+  price,
+  time_perod,
+  title,
+  extend,
+  image,
+  description,
+}: Props) => {
   return (
     <div
       className={`
@@ -23,11 +31,8 @@ const CardComponent = ({ price, time_perod, title, extend, image }: Props) => {
       </div>
       <div className="px-5 py-2 flex flex-col gap-3">
         <div className="flex flex-col gap-2 w-full">
-          <h6 className="text-center text-xl font-bold flex-wrap">{title}</h6>
-          <p className="text-center text-appTextGray text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil
-            aliquid, exercitationem
-          </p>
+          <p className="text-center text-xl font-bold flex-wrap">{title}</p>
+          <p className="text-center text-appTextGray text-sm">{description}</p>
         </div>
         <div className="border-t border-appBorderColor flex items-center justify-between py-3">
           <div className="flex gap-2 font-semibold">{time_perod} Days</div>

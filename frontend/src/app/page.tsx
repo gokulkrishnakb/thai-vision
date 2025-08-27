@@ -15,36 +15,42 @@ const demoPackage = [
     time_period: "4",
     price: "998",
     extend: false,
-    image: "/group-tour.jpg",
+    image: "/package-one.jpg",
+    description:
+      "Celebrate Yi Peng in Chiang Mai with lanterns, temples, culture, and an ethical elephant experience.",
   },
   {
-    title: "4 Days Yi Peng Chiang mia Tour",
-    time_period: "4",
-    price: "998",
+    title: "5 Days Bangkok Songkran Experience: Rituals to Revelry",
+    time_period: "5",
+    price: "1,040",
     extend: true,
-    image: "/family-tour.jpg",
+    image: "/package-two.jpg",
+    description:
+      "Celebrate Songkran with temple visits, elephant encounters, and epic water fights in Bangkok.",
   },
   {
-    title: "4 Days Yi Peng Chiang mia Tour",
-    time_period: "4",
-    price: "998",
+    title: "Luxury Thai Honeymoon: Culture, Nature & Island Retreats",
+    time_period: "14",
+    price: "12,630",
     extend: false,
-    image: "/corporate-event.jpg",
+    image: "/package-three.jpg",
+    description:
+      "A luxurious honeymoon blending romance, culture, and five-star escapes across Thailand.",
   },
-  {
-    title: "4 Days Yi Peng Chiang mia Tour",
-    time_period: "4",
-    price: "998",
-    extend: true,
-    image: "/hero-banner.jpg",
-  },
-  {
-    title: "4 Days Yi Peng Chiang mia Tour",
-    time_period: "4",
-    price: "998",
-    extend: false,
-    image: "/hero-banner.jpg",
-  },
+  // {
+  //   title: "4 Days Yi Peng Chiang mia Tour",
+  //   time_period: "4",
+  //   price: "998",
+  //   extend: true,
+  //   image: "/hero-banner.jpg",
+  // },
+  // {
+  //   title: "4 Days Yi Peng Chiang mia Tour",
+  //   time_period: "4",
+  //   price: "998",
+  //   extend: false,
+  //   image: "/hero-banner.jpg",
+  // },
 ];
 
 const LandingPage = () => {
@@ -115,9 +121,9 @@ const LandingPage = () => {
                 flexibility to match their travel style—whether they’re
                 spiritual seekers, cultural enthusiasts, or mindful explorers.
               </p>
-              <button className="px-4 py-2 border-2 border-violet-950 rounded-sm text-violet-950 font-semibold">
+              {/* <button className="px-4 py-2 border-2 border-violet-950 rounded-sm text-violet-950 font-semibold">
                 View Family Options
-              </button>
+              </button> */}
             </div>
           </div>
           <p className="text-violet-950 font-semibold text-center cursor-pointer mt-10 underline">
@@ -127,7 +133,7 @@ const LandingPage = () => {
         <div className="bg-appBgGray py-20 mt-12">
           <div className="w-containerWidth mx-auto grid md:grid-cols-2 gap-5">
             <div className="flex flex-col gap-5 pt-8">
-              <h6 className="text-2xl font-semibold">
+              <h6 className="text-2xl font-semibold text-appTextGray">
                 Group Travel & Set Departures
               </h6>
               <p className="text-appTextGray text-sm">
@@ -176,9 +182,9 @@ const LandingPage = () => {
                 delivers flawless event execution—on time, on budget, and on
                 brand.
               </p>
-              <button className="px-4 py-2 border-2 border-violet-950 rounded-sm text-violet-950 font-semibold">
+              {/* <button className="px-4 py-2 border-2 border-violet-950 rounded-sm text-violet-950 font-semibold">
                 View Corporate Options
-              </button>
+              </button> */}
             </div>
           </div>
           <p className="text-violet-950 font-semibold underline text-center mt-8">
@@ -215,6 +221,7 @@ const LandingPage = () => {
                     price={tourPackage.price}
                     time_perod={tourPackage.time_period}
                     extend={tourPackage.extend}
+                    description={tourPackage.description}
                   />
                 </div>
               ))}
