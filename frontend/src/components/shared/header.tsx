@@ -3,11 +3,11 @@ import React from "react";
 
 const HeaderComponent = () => {
   return (
-    <div className="shadow-xl/30 bg-navBgColor ">
-      <section className="py- border-b border-appBorderColor">
+    <div className="shadow-xl/30 lg:h-[14vh] bg-navBgColor ">
+      <section className="py-3 h-full border-b border-appBorderColor">
         <div className="mx-smallScreenMargin xl:mx-auto xl:w-containerWidth flex">
-          <div className="flex justify-between items-center">
-             {/* <Image
+          <div className="flex justify-between items-center w-full">
+            {/* <Image
                                src="/logo.webp" // 👈 replace with your logo file in public/
                                alt="Company Logo"
                                width={40}
@@ -35,21 +35,20 @@ const HeaderComponent = () => {
             </div>
           </div>
           <nav className="py-7 hidden lg:block ms-auto">
-        <div className="xl:w-containerWidth flex gap-7 mx-smallScreenMargin xl:mx-auto">
-          <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
-            <p className="text-md font-semibold">About</p>
-          </div>
-          <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
-            <p className="text-md font-semibold">Contact </p>
-          </div>
-          <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
-            <p className="text-md font-semibold">Blog </p>
-          </div>
-        </div>
-      </nav>
+            <div className="xl:w-containerWidth flex gap-7 mx-smallScreenMargin xl:mx-auto">
+              <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
+                <p className="text-md font-semibold">About</p>
+              </div>
+              <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
+                <p className="text-md font-semibold">Contact </p>
+              </div>
+              <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
+                <p className="text-md font-semibold">Blog </p>
+              </div>
+            </div>
+          </nav>
         </div>
       </section>
-      
     </div>
   );
 };

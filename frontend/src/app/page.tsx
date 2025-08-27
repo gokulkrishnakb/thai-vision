@@ -15,30 +15,35 @@ const demoPackage = [
     time_period: "4",
     price: "998",
     extend: false,
+    image: "/group-tour.jpg",
   },
   {
     title: "4 Days Yi Peng Chiang mia Tour",
     time_period: "4",
     price: "998",
     extend: true,
+    image: "/family-tour.jpg",
   },
   {
     title: "4 Days Yi Peng Chiang mia Tour",
     time_period: "4",
     price: "998",
     extend: false,
+    image: "/corporate-event.jpg",
   },
   {
     title: "4 Days Yi Peng Chiang mia Tour",
     time_period: "4",
     price: "998",
     extend: true,
+    image: "/hero-banner.jpg",
   },
   {
     title: "4 Days Yi Peng Chiang mia Tour",
     time_period: "4",
     price: "998",
     extend: false,
+    image: "/hero-banner.jpg",
   },
 ];
 
@@ -57,8 +62,8 @@ const LandingPage = () => {
     <div className="w-full">
       <HeaderComponent />
       <section>
-        <div className="h-[82vh] relative overflow-hidden bg-[url(/hero-banner.jpg)] bg-no-repeat bg-cover bg-center">
-          <div className="w-full xl:w-containerWidth mx-smallScreenMargin xl:mx-auto pt-24 flex flex-col text-white">
+        <div className="h-[86vh] relative overflow-hidden bg-[url(/hero-banner.jpg)] bg-no-repeat bg-cover bg-center flex flex-col justify-center">
+          <div className="w-full xl:w-containerWidth mx-smallScreenMargin xl:mx-auto flex flex-col text-white">
             <div className="flex gap-3 flex-wrap text-sm">
               <p>We are the leading</p>
               <p>DMC in thailand</p>
@@ -89,15 +94,13 @@ const LandingPage = () => {
             FIT Travel Service
           </h6>
           <p className="text-appTextGray text-sm text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            numquam, asperiores reiciendis suscipit nobis ipsa, ipsum ab sequi
-            officia nam facilis fugit non iure! Deserunt eos magnam eius dolore
-            expedita?
+            We design flexible FIT programs for all types of travelers — from
+            couples and families to solo clients and small groups.
           </p>
-          <div className="grid grid-cols-2 mt-10 gap-10">
-            <div className="relative w-full h-80 rounded-tl-[50px] rounded-br-[150px] overflow-hidden">
+          <div className="grid md:grid-cols-2 mt-10 gap-10">
+            <div className="relative w-full aspect-video md:aspect-auto md:h-80 rounded-tl-[50px] rounded-br-[150px] overflow-hidden">
               <Image
-                src={"/hero-banner.jpg"}
+                src={"/family-tour.jpg"}
                 alt="image"
                 fill
                 className="object-cover"
@@ -105,15 +108,12 @@ const LandingPage = () => {
             </div>
             <div className="flex flex-col gap-4">
               <p className="font-semibold text-2xl">Thailand Family Tours</p>
-              <p className="text-appTextGray">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                nesciunt iste libero quas ducimus. Molestias rem nam natus sunt
-                fugiat quia accusamus, possimus commodi expedita sit pariatur
-                consectetur doloremque officia. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Perferendis a, quis omnis,
-                laboriosam deserunt blanditiis, modi nam mollitia optio sed
-                fugit. Labore tempore asperiores autem laborum qui neque totam
-                cumque?
+              <p className="text-appTextGray text-sm">
+                Offer travelers custom-designed cultural programs that showcase
+                Thailand’s rich Buddhist heritage, royal history, traditional
+                arts, sacred temples, and local rituals, with complete
+                flexibility to match their travel style—whether they’re
+                spiritual seekers, cultural enthusiasts, or mindful explorers.
               </p>
               <button className="px-4 py-2 border-2 border-violet-950 rounded-sm text-violet-950 font-semibold">
                 View Family Options
@@ -125,24 +125,24 @@ const LandingPage = () => {
           </p>
         </div>
         <div className="bg-appBgGray py-20 mt-12">
-          <div className="w-containerWidth mx-auto grid grid-cols-2 gap-5">
+          <div className="w-containerWidth mx-auto grid md:grid-cols-2 gap-5">
             <div className="flex flex-col gap-5 pt-8">
               <h6 className="text-2xl font-semibold">
                 Group Travel & Set Departures
               </h6>
               <p className="text-appTextGray text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Inventore eius nam quos. Vero inventore, cumque neque corporis
-                magnam eos iusto consectetur praesentium laudantium error
-                numquam repellendus architecto, sit cum excepturi!
+                Whether you're organizing a leisure group, fixed-date departure,
+                corporate incentive, or special interest tour, we provide fast,
+                reliable support with fully costed programs delivered within
+                hours.
               </p>
               <p className="text-violet-950 underline font-semibold">
                 Request Group Proposal
               </p>
             </div>
-            <div className="w-full h-80 relative rounded-tr-[50px] rounded-bl-[150px] overflow-hidden">
+            <div className="w-full aspect-video md:aspect-auto md:h-80 relative rounded-tr-[50px] rounded-bl-[150px] overflow-hidden">
               <Image
-                src={"/hero-banner.jpg"}
+                src={"/group-tour.jpg"}
                 alt="image"
                 fill
                 className="bg-cover"
@@ -155,15 +155,13 @@ const LandingPage = () => {
             MICE & Corporate Events
           </h6>
           <p className="text-appTextGray text-sm text-center mt-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-            distinctio ipsam omnis ratione iste veritatis cumque blanditiis,
-            consectetur commodi inventore culpa voluptatum incidunt amet
-            pariatur vel velit molestias nesciunt dolorem?
+            Need a seamless partner for meetings, incentives, conferences, or
+            executive off-sites in Thailand?
           </p>
-          <div className="grid grid-cols-2 mt-10 gap-10">
-            <div className="relative w-full h-80 rounded-tl-[50px] rounded-br-[150px] overflow-hidden">
+          <div className="grid md:grid-cols-2 mt-10 gap-10">
+            <div className="relative w-full aspect-video md:aspect-auto md:h-80 rounded-tl-[50px] rounded-br-[150px] overflow-hidden">
               <Image
-                src={"/hero-banner.jpg"}
+                src={"/corporate-event.jpg"}
                 alt="image"
                 fill
                 className="object-cover"
@@ -171,18 +169,15 @@ const LandingPage = () => {
             </div>
             <div className="flex flex-col gap-4">
               <p className="font-semibold text-2xl">Corporate Event</p>
-              <p className="text-appTextGray">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                nesciunt iste libero quas ducimus. Molestias rem nam natus sunt
-                fugiat quia accusamus, possimus commodi expedita sit pariatur
-                consectetur doloremque officia. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Perferendis a, quis omnis,
-                laboriosam deserunt blanditiis, modi nam mollitia optio sed
-                fugit. Labore tempore asperiores autem laborum qui neque totam
-                cumque?
+              <p className="text-appTextGray text-sm">
+                Whether you're organizing a high-impact incentive trip,
+                strategic executive retreat, multinational conference, or
+                intimate board meeting, our dedicated MICE team in Thailand
+                delivers flawless event execution—on time, on budget, and on
+                brand.
               </p>
               <button className="px-4 py-2 border-2 border-violet-950 rounded-sm text-violet-950 font-semibold">
-                View Family Options
+                View Corporate Options
               </button>
             </div>
           </div>
@@ -192,19 +187,18 @@ const LandingPage = () => {
         </div>
       </section>
       <section className="bg-appBgGray mt-8">
-        <div className="w-containerWidth py-16 mx-auto">
+        <div className="w-full lg:w-containerWidth py-16 px-smallScreenMargin md:px-0 lg:mx-auto">
           <h6 className="text-4xl font-semibold text-center">
             Our Top Selling Thailand Itineraries
           </h6>
           <p className="text-center text-appTextGray mt-5 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-            illum eius unde neque eligendi cumque, nihil possimus nisi quis
-            quidem deleniti? Quidem labore unde, repudiandae sit odit ipsum.
-            Deserunt, delectus.
+            Get Inspired by our Thailand Itineraries, And Start Customizing your
+            Client’s Future unforgettable trip to Thailand with one of our Local
+            Destination Experts.
           </p>
-          <div className="mt-10 flex items-center gap-3">
+          <div className="mt-10 flex items-center gap-3 relative">
             <button
-              className="bg-appBorderColor rounded-full p-4 cursor-pointer"
+              className="bg-appBorderColor rounded-full p-4 cursor-pointer absolute z-10 md:relative"
               onClick={() => handleScroll(-380)}
             >
               <LeftIcon />
@@ -214,8 +208,9 @@ const LandingPage = () => {
               className="flex gap-5 flex-1 overflow-x-scroll no-scrollbar"
             >
               {demoPackage.map((tourPackage, index) => (
-                <div key={index} className="w-[22rem]">
+                <div key={index} className="w-full md:w-[22rem]">
                   <CardComponent
+                    image={tourPackage.image}
                     title={tourPackage.title}
                     price={tourPackage.price}
                     time_perod={tourPackage.time_period}
@@ -225,7 +220,7 @@ const LandingPage = () => {
               ))}
             </div>
             <button
-              className="bg-appBorderColor rounded-full p-4 cursor-pointer"
+              className="bg-appBorderColor rounded-full p-4 cursor-pointer absolute right-0 z-10 md:relative"
               onClick={() => handleScroll(380)}
             >
               <RightIcon />

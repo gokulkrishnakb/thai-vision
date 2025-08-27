@@ -6,24 +6,20 @@ type Props = {
   time_perod: string;
   price: string;
   extend: boolean;
+  image: string;
 };
 
-const CardComponent = ({ price, time_perod, title, extend }: Props) => {
+const CardComponent = ({ price, time_perod, title, extend, image }: Props) => {
   return (
     <div
       className={`
-    w-[20rem] ${
-      extend ? "h-[32rem]" : "max-h-[30rem]"
+    w-[90vw] md:w-[20rem] ${
+      extend ? "h-[31rem]" : "max-h-[30rem]"
     } bg-white rounded-md overflow-hidden shadow
     `}
     >
       <div className="relative w-full h-64">
-        <Image
-          src={"/hero-banner.jpg"}
-          alt="image"
-          fill
-          className="object-cover"
-        />
+        <Image src={image} alt="image" fill className="object-cover" />
       </div>
       <div className="px-5 py-2 flex flex-col gap-3">
         <div className="flex flex-col gap-2 w-full">
