@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const HeaderComponent = () => {
@@ -6,7 +7,7 @@ const HeaderComponent = () => {
       <section className="border-b py-3 border-appBorderColor">
         <div className="mx-smallScreenMargin xl:mx-auto xl:w-containerWidth">
           <div className="flex justify-between items-center">
-            <h6>Tai Tourism</h6>
+            <Image src={"/logo.png"} alt="logo" width={100} height={100} />
             <div className="lg:hidden block">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +29,7 @@ const HeaderComponent = () => {
           </div>
         </div>
       </section>
-      <nav className="py-7 shadow-xl/30 bg-navBgColor hidden lg:block">
+      {/* <nav className="py-7 shadow-xl/30 bg-navBgColor hidden lg:block">
         <div className="xl:w-containerWidth flex gap-3 mx-smallScreenMargin xl:mx-auto">
           <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
             <p>Thailand Tours</p>
@@ -37,7 +38,7 @@ const HeaderComponent = () => {
             <p>Things to do</p>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </>
   );
 };

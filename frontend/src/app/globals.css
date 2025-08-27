@@ -8,6 +8,7 @@
   --containerWidth: 75%;
   --navBackgroundColor: #f8f8f8;
   --smallScreenMargin: 20px;
+  --appbgGray: #f2f2f2;
 }
 
 @theme inline {
@@ -20,10 +21,21 @@
   --spacing-containerWidth: var(--containerWidth);
   --color-navBgColor: var(--navBackgroundColor);
   --spacing-smallScreenMargin: var(--smallScreenMargin);
+  --color-appBgGray: var(--appbgGray);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
