@@ -116,9 +116,9 @@ const LandingPage = () => {
               <p className="font-semibold text-2xl">Thailand Family Tours</p>
               <p className="text-appTextGray text-sm">
                 Offer travelers custom-designed cultural programs that showcase
-                Thailand’s rich Buddhist heritage, royal history, traditional
+                Thailand&apos;s rich Buddhist heritage, royal history, traditional
                 arts, sacred temples, and local rituals, with complete
-                flexibility to match their travel style—whether they’re
+                flexibility to match their travel style—whether they&apos;re
                 spiritual seekers, cultural enthusiasts, or mindful explorers. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi aliquam quos eveniet adipisci laudantium dolorem ipsum similique consequuntur assumenda aliquid sint molestias repellat cum asperiores, accusamus, temporibus deleniti! Animi.
               </p>
               {/* <button className="px-4 py-2 border-2 border-violet-950 rounded-sm text-violet-950 font-semibold">
@@ -138,7 +138,7 @@ const LandingPage = () => {
                 Group Travel & Set Departures
               </h6>
               <p className="text-appTextGray text-sm">
-                Whether you're organizing a leisure group, fixed-date departure,
+                Whether you&apos;re organizing a leisure group, fixed-date departure,
                 corporate incentive, or special interest tour, we provide fast,
                 reliable support with fully costed programs delivered within
                 hours. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam optio dolorum, dignissimos soluta quisquam dolorem architecto, consectetur repellendus impedit eum alias est enim maiores exercitationem ea nihil explicabo rerum.
@@ -177,7 +177,7 @@ const LandingPage = () => {
             <div className="flex flex-col gap-4">
               <p className="font-semibold text-2xl">Corporate Event</p>
               <p className="text-appTextGray text-sm">
-                Whether you're organizing a high-impact incentive trip,
+                Whether you&apos;re organizing a high-impact incentive trip,
                 strategic executive retreat, multinational conference, or
                 intimate board meeting, our dedicated MICE team in Thailand
                 delivers flawless event execution—on time, on budget, and on
@@ -203,7 +203,7 @@ const LandingPage = () => {
           </h6>
           <p className="text-center text-appTextGray mt-5 text-sm">
             Get Inspired by our Thailand Itineraries, And Start Customizing your
-            Client’s Future unforgettable trip to Thailand with one of our Local
+            Client&apos;s Future unforgettable trip to Thailand with one of our Local
             Destination Experts.
           </p>
           <div className="mt-10 flex items-center gap-3 relative">

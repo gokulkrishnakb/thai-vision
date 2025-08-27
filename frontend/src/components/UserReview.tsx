@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 
 type Review = {
@@ -70,20 +71,25 @@ export default function TestimonialCarousel() {
   const total = reviews.length;
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % total);
-  const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + total) % total);
 
-  // Auto-slide
-  useEffect(() => {
-    if (!isPaused) {
-      intervalRef.current = setInterval(() => {
-        nextSlide();
-      }, 4000);
-    }
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-  }, [isPaused]);
+const nextSlide = useCallback(() => {
+  setCurrentIndex((prev) => (prev + 1) % total);
+}, [total]);
+
+const prevSlide = useCallback(() => {
+  setCurrentIndex((prev) => (prev - 1 + total) % total);
+}, [total]);
+
+useEffect(() => {
+  if (!isPaused) {
+    intervalRef.current = setInterval(() => {
+      nextSlide();
+    }, 4000);
+  }
+  return () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+  };
+}, [isPaused, nextSlide]);
 
   const toggleExpand = (id: number) => {
     setExpandedMap((prev) => {
@@ -131,11 +137,15 @@ export default function TestimonialCarousel() {
               >
                 {/* Avatar + Name */}
                 <div className="flex items-center mb-3">
-                  <img
-                    src={review.avatar}
-                    alt={review.name}
-                    className="w-12 h-12 rounded-full object-cover mr-3"
-                  />
+
+<Image
+  src={review.avatar}
+  alt={review.name}
+  width={48}
+  height={48}
+  className="w-12 h-12 rounded-full object-cover mr-3"
+/>
+
                   <div>
                     <span className="font-semibold text-gray-900">
                       {review.name}
