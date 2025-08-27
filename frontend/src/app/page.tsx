@@ -99,7 +99,7 @@ const LandingPage = () => {
           <h6 className="text-center text-appTextGray text-2xl font-semibold">
             FIT Travel Service
           </h6>
-          <p className="text-appTextGray text-sm text-center">
+          <p className="text-appTextGray text-md text-center">
             We design flexible FIT programs for all types of travelers — from
             couples and families to solo clients and small groups.
           </p>
@@ -119,16 +119,17 @@ const LandingPage = () => {
                 Thailand’s rich Buddhist heritage, royal history, traditional
                 arts, sacred temples, and local rituals, with complete
                 flexibility to match their travel style—whether they’re
-                spiritual seekers, cultural enthusiasts, or mindful explorers.
+                spiritual seekers, cultural enthusiasts, or mindful explorers. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi commodi aliquam quos eveniet adipisci laudantium dolorem ipsum similique consequuntur assumenda aliquid sint molestias repellat cum asperiores, accusamus, temporibus deleniti! Animi.
               </p>
               {/* <button className="px-4 py-2 border-2 border-violet-950 rounded-sm text-violet-950 font-semibold">
                 View Family Options
               </button> */}
-            </div>
-          </div>
-          <p className="text-violet-950 font-semibold text-center cursor-pointer mt-10 underline">
+              <p className="text-violet-950 underline font-semibold">
             Explore FIT Travel Services
           </p>
+            </div>
+          </div>
+          
         </div>
         <div className="bg-appBgGray py-20 mt-12">
           <div className="w-containerWidth mx-auto grid md:grid-cols-2 gap-5">
@@ -140,7 +141,7 @@ const LandingPage = () => {
                 Whether you're organizing a leisure group, fixed-date departure,
                 corporate incentive, or special interest tour, we provide fast,
                 reliable support with fully costed programs delivered within
-                hours.
+                hours. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nam optio dolorum, dignissimos soluta quisquam dolorem architecto, consectetur repellendus impedit eum alias est enim maiores exercitationem ea nihil explicabo rerum.
               </p>
               <p className="text-violet-950 underline font-semibold">
                 Request Group Proposal
@@ -160,7 +161,7 @@ const LandingPage = () => {
           <h6 className="text-2xl text-appTextGray text-center font-semibold">
             MICE & Corporate Events
           </h6>
-          <p className="text-appTextGray text-sm text-center mt-6">
+          <p className="text-appTextGray text-md text-center mt-6">
             Need a seamless partner for meetings, incentives, conferences, or
             executive off-sites in Thailand?
           </p>
@@ -180,16 +181,19 @@ const LandingPage = () => {
                 strategic executive retreat, multinational conference, or
                 intimate board meeting, our dedicated MICE team in Thailand
                 delivers flawless event execution—on time, on budget, and on
-                brand.
+                brand. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id debitis, neque unde modi maiores veritatis sapiente? Ipsum iusto obcaecati soluta est, esse accusamus voluptas modi sit provident numquam similique explicabo.
               </p>
               {/* <button className="px-4 py-2 border-2 border-violet-950 rounded-sm text-violet-950 font-semibold">
                 View Corporate Options
               </button> */}
-            </div>
-          </div>
-          <p className="text-violet-950 font-semibold underline text-center mt-8">
+              <p className="text-violet-950 font-semibold underline">
             Explore MICE Solutions
           </p>
+            </div>
+          </div>
+          {/* <p className="text-violet-950 font-semibold underline text-center mt-8">
+            Explore MICE Solutions
+          </p> */}
         </div>
       </section>
       <section className="bg-appBgGray mt-8">
