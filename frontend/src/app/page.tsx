@@ -68,8 +68,8 @@ const LandingPage = () => {
               <p>We are the leading</p>
               <p>DMC in thailand</p>
             </div>
-            <h6 className="text-3xl lg:text-5xl mt-3">Tailor Made</h6>
-            <h6 className="text-3xl lg:text-5xl font-bold">Thailand Tours</h6>
+            <h6 className="text-3xl lg:text-6xl mt-3">Tailor Made</h6>
+            <h6 className="text-3xl lg:text-6xl font-bold">Thailand Tours</h6>
             <div className="flex gap-3 mt-3 ps-2 md:ps-3">
               <div className="px-2 sm:px-4 md:px-8 py-2 md:py-3 bg-white text-black cursor-pointer">
                 <p className="font-semibold text-sm md:text-[1rem]">
