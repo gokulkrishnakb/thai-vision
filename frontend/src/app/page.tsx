@@ -51,7 +51,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className=" pb-16">
+    <div className="">
       <HeaderComponent />
       <section>
         <div className="h-[75vh] relative overflow-hidden bg-[url(/hero-banner.jpg)] bg-no-repeat bg-cover bg-center">
