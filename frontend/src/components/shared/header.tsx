@@ -3,12 +3,18 @@ import React from "react";
 
 const HeaderComponent = () => {
   return (
-    <div className="shadow-xl/30 h-[18vh] ">
-      <section className="py-3 border-b border-appBorderColor">
-        <div className="mx-smallScreenMargin xl:mx-auto xl:w-containerWidth">
+    <div className="shadow-xl/30 bg-navBgColor ">
+      <section className="py- border-b border-appBorderColor">
+        <div className="mx-smallScreenMargin xl:mx-auto xl:w-containerWidth flex">
           <div className="flex justify-between items-center">
-            {/* <Image src={"/logo.png"} alt="logo" width={100} height={100} /> */}
-            <h6 className="font-bold text-xl">TAI VISION</h6>
+             {/* <Image
+                               src="/logo.webp" // 👈 replace with your logo file in public/
+                               alt="Company Logo"
+                               width={40}
+                               height={40}
+                               className="mr-2 rounded-full object-cover"
+                             /> */}
+            <h6 className="font-bold text-xl">THAI VISION</h6>
             <div className="lg:hidden block">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,18 +34,22 @@ const HeaderComponent = () => {
               </svg>
             </div>
           </div>
-        </div>
-      </section>
-      <nav className="py-7 bg-navBgColor hidden lg:block">
-        <div className="xl:w-containerWidth flex gap-3 mx-smallScreenMargin xl:mx-auto">
+          <nav className="py-7 hidden lg:block ms-auto">
+        <div className="xl:w-containerWidth flex gap-7 mx-smallScreenMargin xl:mx-auto">
           <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
-            <p>Thailand Tours</p>
+            <p className="text-md font-semibold">About</p>
           </div>
           <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
-            <p>Things to do</p>
+            <p className="text-md font-semibold">Contact </p>
+          </div>
+          <div className="flex items-center gap-2 text-appTextGray cursor-pointer">
+            <p className="text-md font-semibold">Blog </p>
           </div>
         </div>
       </nav>
+        </div>
+      </section>
+      
     </div>
   );
 };
