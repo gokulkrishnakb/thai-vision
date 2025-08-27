@@ -11,14 +11,16 @@ export default function Footer() {
         {/* Column 1 - Logo + Address */}
         <div className="col-span-2 mb-3">
            <div className='flex items-center mb-3 '>
-                <Image
+                {/* <Image
                   src="/logo.webp" // 👈 replace with your logo file in public/
                   alt="Company Logo"
                   width={40}
                   height={40}
                   className="mr-2 rounded-full object-cover"
                 />
-              <h2 className="text-2xl font-bold text-white">Thai Vision</h2>
+              <h2 className="text-2xl font-bold text-white">Thai Vision</h2> */}
+                            <h6 className=" text-xl text-white ms-5">&<span className='ms-3'>THAI VISION</span></h6>
+
            </div>
           <p className="text-md text-gray-600 leading-6 ms-13">
             Thai Vision Holidays <br />

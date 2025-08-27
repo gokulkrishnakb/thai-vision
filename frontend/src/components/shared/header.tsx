@@ -14,10 +14,10 @@ const HeaderComponent = () => {
                                height={40}
                                className="mr-2 rounded-full object-cover"
                              /> */}
-{/*             <h6 className="brand-title text-blue-900">& THAI VISION</h6>
- */}            
-              <h6 className="brand-title">THAI VISION</h6>
-              <div className="lg:hidden block">
+             <h6 className="brand-title text-blue-900">& THAI VISION</h6>
+          
+{/*               <h6 className="brand-title">THAI VISION</h6>
+ */}              <div className="lg:hidden block">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={24}
