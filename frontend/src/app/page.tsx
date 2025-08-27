@@ -5,6 +5,9 @@ import Image from "next/image";
 import CardComponent from "@/components/shared/cards";
 import LeftIcon from "@/components/icons/left-icon";
 import RightIcon from "@/components/icons/right-icon";
+import PartnerCarousel from "@/components/partnerCarosel";
+import TestimonialCarousel from "@/components/UserReview";
+import Footer from "@/components/shared/footer";
 
 const demoPackage = [
   {
@@ -51,7 +54,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="">
+    <div className="w-full">
       <HeaderComponent />
       <section>
         <div className="h-[75vh] relative overflow-hidden bg-[url(/hero-banner.jpg)] bg-no-repeat bg-cover bg-center">
@@ -233,7 +236,10 @@ const LandingPage = () => {
           </p>
         </div>
       </section>
-    </div>
+      <PartnerCarousel/>
+      <TestimonialCarousel/>
+      <Footer/>
+     </div>
   );
 };
 
